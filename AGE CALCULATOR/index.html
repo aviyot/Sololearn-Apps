@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <template>
+    <div id="mask" class="mask">
+        <h1>Under construction</h1>
+        <div id="close">x</div>
+    </div>
+    </template>
+    <div class="card bg-info text-center mb-3 text-white" style="font-size:x-large">AGE CALCULATOR</div>
+    
+     <div id="brith" class="container bg-warning">
+     <div class="container">
+     <div class="row">
+       <div class="col">
+       <div id="title" class="text-center bg-success text-white">Enter Brithday </div>
+    </div>
+    <div class="row">
+       <div class="col">
+       <label for="year"> Year</label>
+       <input id="year" type="number" value="2000"/>
+       </div>
+       
+       <div class="col">
+       <label for="month"> Month</label>
+       <input id="month" type="number" value="01"/>
+       </div>
+       
+       <div class="col">
+       <label for="day"> Day</label>
+       <input id="day" type="number" value="01"/>
+       </div>
+     </div>
+       
+     </div>
+<!--
+       <div>
+       <label>Now</label>
+       <input type="radio" name="time" value="now">
+       <label>Past</label>
+       <input type="radio" name="time" value="time">
+       </div>
+  -->     
+         <div id="cal">
+       <button  class="btn btn-primary m-1 p-1">CALCULATE CURRENT AGE</button> 
+       </div>
+      </div> 
+</div>
+
+
+
+    <div id="past-date" class="container bg-warning mt-3">
+       
+       
+     <div class="row">
+       <div id="title" class="col text-center bg-success text-white">Enter Past Date</div>
+       </div>
+       
+       <div class="row">
+       <div class="col">
+       <label for="past-year"> Year</label>
+       <input id="past-year" type="number" value="2019"/>
+       </div>
+       
+       <div class="col">
+       <label for="past-month"> Month</label>
+       <input id="past-month" type="number" value="15"/>
+       </div>
+       
+    
+    
+       <div class="col">
+       <label for="past-day"> Day</label>
+       <input id="past-day" type="number" value="15"/>
+       </div>
+       </div>
+    
+       
+       <div class="text-center">
+ 
+          <button id="cal-past" class="btn  btn-primary m-1 p-1">CALCULATE PAST AGE</button>
+          </div>
+       
+           </div>
+           
+           
+    <div class="age-info card bg-primary text-white position-absolute d-none " style="font-size:x-large">
+    
+    
+    
+    <button type="button" class="close exit position-absolute close" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+    
+       <ul id="age" style="font-size:x-large"></ul>
+       </div>
+ <script src="main.js"></script>
+    </body>
+
+</html>

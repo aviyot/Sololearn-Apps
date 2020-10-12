@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sololrean Profile Img</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">        
+    </head>
+    <body>
+        <div id="app" style="text-align:center">
+         <h3>Sololrean Avatar Profile Img</h3>
+         <div style="margin:5px 0">
+         <span>ID : </span><input type="number" @focus = "stopInterval()" v-model="id" size="20"/>
+         </div>
+    <div style="height:280px">
+        <img   @load =loadImg() v-show = "showImg" @error = imgError :src="`https://api.sololearn.com/Uploads/Avatars/${this.id}.jpg`" ref="img"/><br/>
+        </div>
+        <div>
+        <button @click = nextId() 
+        style="margin:6px;font-size:large">Next ID</button>
+        <button @click = prevId() style="
+                        margin:6px;
+                        font-size:large"
+        >Prev ID</button>
+   <div>
+   <br/>
+        <button v-if="!random" @click="randomId()" style="margin:6px; font-size:x-large">Random ID</button>
+           <button  v-if ="random" style="margin:6px;font-size:x-large"  @click="stopInterval()">Stop Random</button>
+           </div>
+    </div>
+        </div>
+    
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+body ,font{
+    font-size:large ;
+    height:100%;
+}
+
+#app {
+    height:100%;
+    display:grid;
+    gap:10px;
+    grid-template:1fr 2fr 1fr 1fr 5fr/ 1fr;
+    
+}
+
+#app > div:nth-child(1){
+
+}
+
+#menu{
+//display:grid;
+//grid-template:1fr/1fr 1fr 1fr;
+    
+}
+
+#menu input {
+    width:80px;
+    
+}
+
+input,button{
+    font-size:large ;
+}
+
+#rgb  {
+    text-align:center;
+    background:blue;
+    color:white;
+}
+
+#main{
+    display:grid;
+    grid-template:1fr/ 1fr 1fr 1fr;
+    gap:10px;
+    font-size:large ;
+    justify-items:center;
+}
+
+#main > div:nth-child(n){
+    display:grid;
+    grid-template:1fr 1fr / 1fr 1fr;
+    column-gap:10px;
+
+    
+}
+
+#main > div:nth-child(n) > input:nth-child(2){
+    grid-column: span 2;
+}
+
+
+#main > div:nth-child(n) > span:nth-child(1){
+    grid-column: span 2;
+}
+
+
+
+
+
+
+
+#reset{
+    background:red;
+    color:white;
+}
+
+
+#main button:enabled{
+    color:green;
+}
+
+#main span {
+    color:white;
+    display:block;
+}
+
+#all-inc-dec span{
+    //display:block;
+    width:130px;
+    
+    height:30px;
+    margin:2px;
+}
+#all-inc-dec button {
+    //display:block;
+    width:70px;
+    
+    height:30px;
+    margin:2px;
+}
+
+
+

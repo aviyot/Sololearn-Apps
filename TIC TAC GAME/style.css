@@ -1,0 +1,55 @@
+body {
+    background-color:yellow;;
+    }
+    
+    td {
+    
+    text-align: center;
+    
+    align-content: center;
+    
+    }
+    
+    .btn {
+    
+    width:50px;
+    height: 50px;
+    font-size: 20px;
+    }
+    
+    }
+    .player {
+        display:inline-block ;
+        width:50px;
+        height:40px;
+    }
+    
+    .players input {
+        display:inline-block;
+        width:20px;
+    }
+    
+    .players{
+        display:none;
+        width:100%;
+    }
+    
+    .game-table table{
+        width:100%;
+        margin:0 auto;
+    }
+    .game-status {
+        background-color:blue;
+        color:white;
+        text-align:center;
+    }
+    
+    .next-player {
+        text-align:center;
+        font-size:1.5rem;
+    }
+    
+    .start-btn {
+        text-align:center;
+    }
+    

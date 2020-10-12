@@ -1,0 +1,82 @@
+html{
+
+    height:100%;
+}
+
+* {
+    box-sizing:border-box;
+}
+body {
+    position:relative;
+    height:100%;
+    height:100%;
+    padding:10px;
+    margin:0;
+    
+
+}
+
+
+#title ,#cal{
+    grid-column:1/ span 3;
+    justify-content:center;
+}
+
+/*
+#brith{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+ grid-column-gap:5px;
+ grid-template-rows:1fr 1fr 1fr;
+}
+*/
+
+#brith input ,#past-date input{
+    width:100%;
+    
+}
+
+
+/*
+.grid {
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+ grid-column-gap:5px;
+ grid-template-rows:1fr 3fr 1fr;
+}
+*/
+
+.mask {
+    position:absolute;
+    display:flex;
+    width:90%;
+    height:80%;
+    background-color:green;
+    z-index:100;
+    justify-content:center ;
+    align-content:center ;
+    opacity:0.8;
+
+}
+#close {
+    font-size:2rem;
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:20px;
+    height:20px;
+    color:red;
+}
+.age-info{
+   width:80%;
+   height:50%;
+    top:25%;
+    left:10%;
+}
+
+.exit{
+    top:5px;
+    right:10px;
+}
+
+

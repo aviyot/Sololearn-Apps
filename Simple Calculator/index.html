@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="main">
+        <div class="title">SIMPLE CALCULATOR</div>
+        <form id="form">
+            <div id="data">
+              <input id="num1" type="number" required autofocus placeholder="Value 1 "/>
+              <input type="text" id="sign" disabled  value="+"/>
+              <input id="num2" type="number" required placeholder="Value 2"/>
+            </div>
+            <div id="op">
+              <button id="plus">+</button>
+              <button id="minus">-</button>
+              <button id="mul">x</button>
+              <button id ="div">/</button>
+              <button type="reset" id ="cl">AC</button>
+            </div>
+            <div id="res-section">
+              <input id="res" disabled >
+              <input  id="his" type="button"  value="&#8635">
+            </div>
+        </form>
+        </div>
+        
+        <div class="popup">
+        
+           <p>Upvote <span class="like"> > </span> if you like </p>
+           <p>Write a commit what you didn't like and what you liked.</p>
+           <p>Thanks...</p>
+           
+           <button id="close">X</button>
+            
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

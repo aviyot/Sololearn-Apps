@@ -1,0 +1,137 @@
+
+
+#op {
+    display:flex;
+    
+}
+
+#main{
+    background-color:grey;
+    padding:5px;
+}
+
+
+#data {
+    display:flex;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#num1,#num2{
+    display:block;
+    width:45%;
+    font-size:1.5rem;
+    text-align:center ;
+    padding:0;
+    margin:0;
+}
+
+#sign{
+    display:block;
+    width:10%;
+    height:40px;
+    font-size:1.5rem;
+    text-align:center ;
+    
+}
+
+#in span {
+   display:block;
+    width:80px;
+    height:40px;
+    font-size:1.5rem;
+}
+
+#op button{
+    width:20%;
+    height:40px;
+    font-size:1.5rem;
+    margin:1px;
+    text-align:center ;
+    
+}
+
+#res-section {
+position:relative
+
+}
+
+#res {
+    width:100%;
+    display:inline-block;
+    height:40px;
+    font-size:2rem;
+    text-align:center;
+    margin-top:10px;
+    background-color:darkGrey;
+    
+}
+
+#his {
+     position:absolute;
+     top:12px;
+     right:0;
+     width:60px;
+     height:70%;
+     font-size:x-large;
+     background-color:yellow;
+     font-weight:bold;
+}
+
+.title {
+    text-align:center;
+    background-color:grey;
+    font-size:1.5rem;
+    color:#ffaa00;
+}
+
+.title::first-letter{
+    font-weight:bold;
+    font-size:1.5rem;
+}
+
+#cl {
+    background-color:red;
+    color:white;
+}
+
+.sign {
+    background-color:yellow;
+}
+
+.popup{
+    top:10vh;
+    left:25vw;
+    position:fixed;
+    display:none;
+    width:50vw;
+    height:60vw;
+    z-index:100;
+    background-color:blue;
+    color:white;
+    padding:20px;
+    opacity:0.8;
+    border:2px white solid;
+    border-radius: 50px;
+}
+
+.like {
+    display:inline-block;
+    transform:rotate(-90deg);
+    color:grey;
+    font-weight:bold;
+    
+}
+
+.popup button {
+    position:absolute;
+    z-index:101;
+    color:red;
+    background-color:white;
+    padding:5px;
+    margin:5px;
+    font-weight:bold;
+    top:2px;
+    right:2px;
+    
+}

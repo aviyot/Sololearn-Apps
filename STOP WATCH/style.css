@@ -1,0 +1,48 @@
+
+
+/* Avi G */
+
+* {
+    
+}
+
+#all{
+    background-color:rgb(200,50,100);
+    min-height:400px;
+    max-height:400px;
+    overflow:scroll ;
+    border-radius:10px;
+    
+}
+
+#clock{
+    font-size:3rem;
+    text-align:center;
+    margin:20px;
+    padding:10px;
+    border-radius:5px;
+    background-color:rgb(200,50,100);
+}
+
+
+#controls{
+margin:5px;
+}
+
+#controls button {
+     padding:3px;
+    font-family:serif;
+    border-radius:5px;
+    width:24%;
+    margin:8px;
+}
+
+#start{
+background-color:green;
+color:white;
+}
+
+#stop{
+background-color:red;
+color:white;
+}

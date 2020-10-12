@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RGB color</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+
+
+        <div id="menu">
+            <span>STEP</span><input type="number" v-model.number="step">
+
+            <button id="reset" v-on:click="reset">RESET</button>
+
+        </div>
+
+        <div id="main">
+            <div>
+                <span :style="{background:'rgb('+red+','+0+','+0+')'}">RED
+                    <input id="r-check" type="checkbox" v-model="checkStatus.red">
+                </span>
+                <input type="number" v-model.number="red">
+                <!--
+        <button :disabled ="max(red)" v-on:click="incR">+</button>
+        <button :disabled ="min(red)" v-on:click="decR">-</button>
+        -->
+            </div>
+
+            <div>
+                <span :style="{background:'rgb('+0+','+green+','+0+')'}">GREEN
+                    <input id="g-check" type="checkbox" v-model="checkStatus.green">
+                </span>
+                <input type="number" v-model.number="green">
+                <!--
+        <button :disabled ="max(green)" v-on:click="incG">+</button>
+        <button :disabled ="min(green)" v-on:click="decG">-</button>
+        -->
+            </div>
+
+            <div>
+                <span :style="{background:'rgb('+0+','+0+','+blue+')'}">BLUE
+                    <input id="b-check" type="checkbox" v-model="checkStatus.blue">
+                </span>
+                <input type="number" v-model.number="blue">
+                <!--
+        <button :disabled ="max(blue)" v-on:click="incB">+</button>
+        <button :disabled ="min(blue)" v-on:click="decB">-</button>
+        -->
+            </div>
+        </div>
+
+        <div id="all-inc-dec" style="display:flex;
+                  justify-content:stretch;
+                  width:300px">
+            <button @click="incAll()">+ </button>
+            <button @click="decAll()"> -</button>
+        </div>
+        <div id="rgb">
+            <span>
+                RGB({{red}},{{green}},{{blue}})
+            </span>
+        </div>
+
+        <div id="rgb-color" :style="{background:'rgb('+red+','+green+','+blue+')'}">
+        </div>
+
+
+        <div style="text-align:center">
+            <button @click="generateRandomColor()" style="padding:5px">random color</button>
+        </div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>
