@@ -1,12 +1,18 @@
 #inc,#dec{
-    
-    
-    margin:20px;
     display:none;
 }
 
+#controls{
+    font-size: 33vw;
+
+}
 
 #app {
-    font-size:xx-large ;
     text-align:center ;
 }
+
+#clock {
+    font-size:20vw;
+
+}
+
