@@ -2,9 +2,8 @@
     display:none;
 }
 
-#controls{
-    font-size: 33vw;
-
+#controls button{
+font-size: xx-large;
 }
 
 #app {
