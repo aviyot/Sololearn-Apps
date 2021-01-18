@@ -1,1 +1,3 @@
-console.log(process.env.name);
+window.onload = function(){
+    console.log(process.env.name);
+}
