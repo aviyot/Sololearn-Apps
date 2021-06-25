@@ -1,0 +1,54 @@
+<!doctype html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <title>Amount Speed Time</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="HTML5"> 
+    <meta name="author" content="avi g">
+    <link rel="stylesheet" href="style.css">
+  </head> 
+  <body>
+  
+  <div id="app" class="app">
+  <div class="calcs">
+  <div>
+  <input type="radio" name="calc" id="amountSelect" onclick="calAmount()">
+  <span>Amount</span>
+  </div>
+  <div>
+    <input type="radio" name="calc" onclick="calSpeed()">
+    <span>Speed</span>
+    </div>
+    <div>
+      <input type="radio" name="calc" onclick="calTime()">
+      <span>Time</span>
+      </div>
+  </div>
+  <div class="data">
+     <div class="amount">
+       <span>Amount</span>
+       <input id="amount"  required type="number"/>
+     </div >
+        <div class="speed">
+       <span>Speed</span>
+       <input id="speed" required type="number"/>
+     </div>
+        <div class="time">
+       <span>Time</span>
+       <input id="time" required type="number"/>
+     </div>
+     </div>
+  </div>
+  
+  
+  <div class="result">
+      <span class="label"></span>
+      <span id="result"></span>
+  </div>
+
+  <script src="main.js"></script>
+
+ </body> 
+ </html>

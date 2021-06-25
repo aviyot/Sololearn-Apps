@@ -1,0 +1,82 @@
+* {
+    box-sizing:border-box;
+}
+
+html,body {
+    height:100%;
+}
+
+
+.data {
+    display:flex;
+    flex-flow:column;
+}
+
+.data div:nth-child(n){
+    flex:1 1 0;
+}
+
+
+.data div {
+    display:flex;
+    padding:0.5rem;
+    
+    
+    
+}
+
+
+.calcs {
+    display:flex;
+    font-size:large;
+    margin-bottom:1rem;
+}
+
+.data div:nth-child(n) span {
+    display:inline-block;
+    width:100px;
+    height:2rem;
+}
+
+
+.data div:nth-child(1) span {
+    background-color:red;
+    color:white;
+}
+
+
+.data div:nth-child(2) span {
+    background-color:green;
+    color:white;
+    
+}
+
+.data div:nth-child(3) span {
+    background-color:yellow;
+    
+}
+
+
+.calcs div:nth-child(-n+2){
+    border-right:2px solid black;
+}
+
+.calcs div:nth-child(n){
+   flex:1 1 0;
+}
+
+.sp
+{
+    width:90vw;
+    height:1rem;
+    background-color:black;
+}
+
+@keyframes order {
+    
+    
+}
+
+
+
+
