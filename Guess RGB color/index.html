@@ -13,7 +13,7 @@
     <div id="app">
         <div class="animated flash " id="rgb-color" :style="{background:'rgb('+red+','+green+','+blue+')'}">
             <div id="random-btn" style="text-align:center">
-                <button @click="generateRandomColor()">random color</button>
+                <button @click="generateRandomColor()">Generate Random Color</button>
             </div>
         </div>
         <div id="msgPlay" v-bind:class="{ 'animated pulse infinite': !guessResult.cal}">
