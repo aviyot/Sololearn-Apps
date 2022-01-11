@@ -1,106 +1,81 @@
-body ,font{
-    font-size:large ;
-    height:100%;
+body,
+font {
+  font-size: large;
+  height: 100%;
 }
 
-
-#resMsg{
-   // background:white;
-    //color:black;
-    
-    
-}
-
-#msgPlay{
-    margin-top:10px;
-    padding:5px 5px;
-    background:orange;
-    text-align:center;
-    
-    
+#msgPlay {
+  margin-top: 10px;
+  padding: 5px 5px;
+  background: orange;
+  text-align: center;
 }
 
 #resMsg span {
-    background-color:yellow;
-    padding:2px;
-    margin:2px;
+  background-color: yellow;
+  padding: 2px;
+  margin: 2px;
 }
 
 #menu input {
-    width:80px;
-    
+  width: 80px;
 }
 
-
-#rgb-color{
-    height:100px;
-    width:100%;
-    margin:0 auto;
+#rgb-color {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
 }
-#guess-color{
-    height:100px;
-    width:100%;
-    margin:0 auto;
-    border:1px solid black;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
+#guess-color {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-input,button{
-    font-size:large ;
-}
-
-#rgb  {
-    text-align:center;
-    background:blue;
-    color:white;
+input,
+button {
+  font-size: large;
 }
 
-
-#main{
-    display:grid;
-    grid-template:1fr/ 1fr 1fr 1fr;
-    gap:10px;
-    font-size:large ;
-    justify-items:center;
+#rgb {
+  text-align: center;
+  background: blue;
+  color: white;
 }
 
-
-#main > div:nth-child(n){
-    display:grid;
-    grid-template:1fr 1fr / 1fr 1fr;
-    column-gap:10px;
-
-    
+#main {
+  display: grid;
+  grid-template: 1fr/ 1fr 1fr 1fr;
+  gap: 10px;
+  font-size: large;
+  justify-items: center;
 }
 
-#main > div:nth-child(n) > input:nth-child(2){
-    grid-column: span 2;
+#main > div:nth-child(n) {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  column-gap: 10px;
 }
 
-
-#main > div:nth-child(n) > span:nth-child(1){
-    grid-column: span 2;
+#main > div:nth-child(n) > input:nth-child(2) {
+  grid-column: span 2;
 }
 
-
-
-
-
-
+#main > div:nth-child(n) > span:nth-child(1) {
+  grid-column: span 2;
+}
 
 #main span {
-    color:white;
-    display:block;
+  color: white;
+  display: block;
 }
 
-#guess-result{
-    background:blue;
-    color:white;
-    text-align:center;
-    padding:5px;
-}
-
-#random-btn{
+#guess-result {
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
