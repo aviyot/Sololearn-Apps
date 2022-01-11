@@ -27,10 +27,10 @@ window.onload = () => {
       },
       showResult: false,
       guessed: false,
+      showAnswer: false,
     },
     methods: {
       guess: function () {
-        this.showResult = true;
         this.guessResult.cal = true;
         this.guessResult.dr = (
           100 -
@@ -61,14 +61,13 @@ window.onload = () => {
         this.red = Math.floor(Math.random() * 256);
         this.blue = Math.floor(Math.random() * 256);
         this.green = Math.floor(Math.random() * 256);
-        this.guessed = false;
       },
       showCorrect: function () {
-        this.gusessNumber.red = this.red;
+        /*    this.gusessNumber.red = this.red;
         this.gusessNumber.green = this.green;
-        this.gusessNumber.blue = this.blue;
-        this.guess();
-        this.showResult = false;
+        this.gusessNumber.blue = this.blue; */
+        this.showAnswer = true;
+        this.showResult = true;
       },
       reset: function () {
         (this.gusessNumber.red = 0),
@@ -76,6 +75,8 @@ window.onload = () => {
           (this.gusessNumber.blue = 0),
           (this.guessResult.cal = false);
         this.showResult = false;
+        this.guessed = false;
+        this.showAnswer = false;
       },
     }, //end mothods obj.
   });

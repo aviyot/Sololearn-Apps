@@ -12,15 +12,21 @@
 <body>
     <div id="app">
         <div class="animated flash " id="rgb-color" :style="{background:'rgb('+red+','+green+','+blue+')'}">
-            <div id="random-btn" style="text-align:center;margin-top:8px">
-                <button @click="generateRandomColor()">Generate Random Color</button>
+            <div id="random-btn" style="text-align:center">
+                <button @click="generateRandomColor()" style="margin-top:8px">Generate Random Color</button>
+                <div v-if="showResult" class="animated flash"
+                    style="margin: 0 auto;margin: 2rem;color:white;display: flex;gap:2rem;justify-content: center;">
+                    <div style="background-color: red;padding: 2px;">Red:{{red}}</div>
+                    <div style="background-color: green;padding: 2px;">Green:{{green}}</div>
+                    <div style="background-color: blue;padding: 2px;">Blue:{{blue}}</div>
+                </div>
             </div>
         </div>
         <div id="msgPlay" v-bind:class="{ 'animated pulse infinite': !guessResult.cal}">
             <span>Enter RGB values(0 - 255)
                 And press GUESS</span>
         </div>
-        <div id="main">
+        <div id="main" style="display: flex;justify-content: space-around;margin-top:0.5rem;">
             <div>
                 <span :style="{background:'rgb('+gusessNumber.red+','+0+','+0+')'}">RED</span>
                 <input type="number" @input="guessResult.cal=false" v-model.number="gusessNumber.red">
@@ -39,24 +45,29 @@
             </div>
         </div>
 
-        <div id="guessBtn">
+        <div id="guessBtn" style="text-align: center;;margin:0.5rem">
             <button v-if="!guessed" @click="guess()">GUESS</button>
-            <button v-if="guessed" @click="showCorrect()">Show Answer</button>
         </div>
 
-        <div class="animated shake" v-if="guessResult.cal" id="guess-color"
-            :style="{background:'rgb('+gusessNumber.red+','+gusessNumber.green+','+gusessNumber.blue+')'}">
-            <div id="resMsg" v-if="showResult" class="animated zoomIn"> <span>R:{{guessResult.dr}}%</span>
-                <span>G:{{guessResult.dg}}%</span>
-                <span>B:{{guessResult.db}}%</span>
+        <div v-if="guessed">
+            <div class="animated shake" id="guess-color"
+                :style="{background:'rgb('+gusessNumber.red+','+gusessNumber.green+','+gusessNumber.blue+')'}">
+                <div id="resMsg" class="animated zoomIn"> <span>R:{{guessResult.dr}}%</span>
+                    <span>G:{{guessResult.dg}}%</span>
+                    <span>B:{{guessResult.db}}%</span>
+                </div>
+
             </div>
-
+            <div id="guess-result" class="zoomIn animated">
+                <span>CORRECT : {{guessResult.correct}}%</span>
+            </div>
         </div>
 
 
-        <div id="guess-result" class="zoomIn animated" v-if="showResult">
-            <span>CORRECT : {{guessResult.correct}}%</span>
+        <div style="text-align: center;margin:0.5rem">
+            <button v-if="guessed && !showAnswer" @click="showCorrect()">Show Answer</button>
         </div>
+
 
 
 
